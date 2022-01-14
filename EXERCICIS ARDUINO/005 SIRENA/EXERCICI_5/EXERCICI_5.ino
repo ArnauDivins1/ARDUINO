@@ -18,9 +18,7 @@ void loop()
   valPot1 = analogRead(pot1);
 
   tone(xiulet, 1000,valPot0);    // xiulet de durada valPot0
-  delay(2*valPot0);              // esperar valPot0 del xiulet + valPot0 silenci
+  delay(valPot0+valPot1);              // esperar valPot0 del xiulet + valPot0 silenci
 
-  tone(xiulet, 1250,valPot1);    // xiulet de durada valPot0
-  delay(2*valPot1);              // esperar valPot0 del xiulet + valPot0 silenci
 
 }
